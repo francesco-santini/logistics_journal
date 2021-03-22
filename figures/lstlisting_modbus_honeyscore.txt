@@ -1,0 +1,22 @@
+msf6 auxiliary(gather/shodan_honeyscore) > show options
+
+Module options (auxiliary/gather/shodan_honeyscore):
+
+   Name           Current Setting                   Required  Description
+   ----           ---------------                   --------  -----------
+   SHODAN_APIKEY  				    yes       The SHODAN API key
+   TARGET                                           yes       The target to get the score of
+
+msf6 auxiliary(gather/shodan_honeyscore) > set VERBOSE true
+VERBOSE => true
+msf6 auxiliary(gather/shodan_honeyscore) > set SHODAN_APIKEY L3iO3ubqc1wvhDGgFVwTR2QE9iObkBYy
+SHODAN_APIKEY => L3iO3ubqc1wvhDGgFVwTR2QE9iObkBYy
+msf6 auxiliary(gather/shodan_honeyscore) > set TARGET 84.220.125.65
+TARGET => 84.220.125.65
+msf6 auxiliary(gather/shodan_honeyscore) > run
+
+[*] Scanning 84.220.125.65
+[-] 84.220.125.65 is not a honeypot
+[*] 84.220.125.65 honeyscore: 0.0/1.0
+[*] Auxiliary module execution completed
+
